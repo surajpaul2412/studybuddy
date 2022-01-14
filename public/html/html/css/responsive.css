@@ -1,0 +1,1001 @@
+/** @format */
+
+@media (max-height: 700px) {
+    .banner_section {
+        height: auto;
+    }
+}
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+    .mx_md_-15{
+        margin-left:-15px!important;
+        margin-right:-15px!important;
+    }
+    .banner_section .image_col {
+        display: none;
+    }
+
+    .banner_section h1 {
+        font-size: 50px;
+    }
+
+    .sidebar_menus {
+        max-width: 60%;
+        right: -60%;
+    }
+
+    .created_section {
+        background-image: none;
+    }
+
+    .app_section .content .title {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 40px;
+    }
+
+    .testimonial_section {
+        padding: 80px 0;
+    }
+
+    .steps_section .single {
+        margin: 20px 0;
+    }
+
+    .steps_section .title {
+        margin-bottom: 40px;
+    }
+
+    .newsletter_section .box {
+        padding: 25px;
+    }
+
+    .newsletter_section .text_col,
+    .newsletter_section .form_col {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .newsletter_section .box .title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .newsletter_section .form_col {
+        margin-top: 30px;
+    }
+
+    .steps_section {
+        padding: 60px 0 130px;
+    }
+
+    .contact_section .title {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .become_section .content h4 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .become_section .content p {
+        font-size: 16px;
+    }
+
+    .become_section .content .join_btn {
+        font-size: 18px;
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+
+    .contact_data_section{
+        padding: 80px 0;
+    }
+
+    .about_info .image_col,
+    .about_info .content_col{
+        padding: 0 15px;
+    }
+
+    .belief_section h3{
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .belief_section .btn{
+        font-size: 20px;
+        margin: 30px auto 50px;
+    }
+
+    .coming_soon_section .counter .item span{
+        font-size:70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mb_sm_10{
+        margin-bottom:10px!important;
+    }
+    .mt_sm_30{
+        margin-top:30px!important;
+    }
+    .mt_sm_20{
+        margin-top:20px!important;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+    header .logo img {
+        width: 100px;
+        height: auto;
+    }
+    header .hamburger_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    header .hamburger_icon img {
+        width: 21px;
+        height: auto;
+    }
+    .banner_section {
+        padding-top: 110px;
+    }
+    .banner_section h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .banner_section ul {
+        margin-top: 20px;
+    }
+    .banner_section .download_btn {
+        margin-top: 30px;
+        font-size: 18px;
+        height: 55px;
+        width: 221px;
+    }
+
+    .sidebar_menus li a {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .created_section .left_content {
+        margin: 60px 0;
+    }
+
+    .created_section .section_title {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .created_section ul {
+        margin: 30px -10px 0;
+    }
+
+    .testimonial_section {
+        padding: 60px 0 100px;
+    }
+
+    .testimonial_section .user_col,
+    .testimonial_section .content_col {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .testimonial_section .content_col {
+        margin-top: 20px;
+    }
+
+    .testimonial_section .content_col:before {
+        left: 0;
+    }
+    .testimonial_section .content_col p {
+        font-size: 16px;
+        line-height: 26px;
+        text-indent: 40px;
+    }
+
+    .testimonial_section {
+        padding: 40px 0 100px;
+    }
+
+    .testimonial_section .user_col img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .app_section .image_col figure {
+        text-align: center;
+    }
+
+    .app_section .image_col figure img {
+        max-width: 300px;
+    }
+
+    .app_section .right_col {
+        margin: 20px 0 40px;
+    }
+
+    .app_section .content p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .app_section .content .title {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .app_section .content .download_btn {
+        width: 220px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .steps_section .title {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .steps_section .single .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .newsletter_section .box .title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .newsletter_section .form_col {
+        margin-top: 20px;
+    }
+
+    .newsletter_section .input_group .form-control {
+        height: 50px;
+        padding: 0 120px 0 30px;
+    }
+
+    .newsletter_section .input_group .submit_btn {
+        padding: 0 30px;
+    }
+
+    .contact_section .title {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .contact_section {
+        padding: 150px 0 60px;
+    }
+
+    footer .top_footer {
+        padding: 40px 0 20px;
+    }
+
+    footer .top_footer h5 {
+        font-size: 20px;
+    }
+
+    footer .top_footer ul {
+        margin-top: 15px;
+    }
+
+    footer .top_footer li a {
+        font-size: 14px;
+    }
+
+    footer .top_footer li {
+        padding: 0px 8px;
+    }
+
+    footer .bottom_footer {
+        padding: 15px 0 20px;
+    }
+
+    .page_heading_section .title {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .page_heading_section p {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .counter {
+        margin-top: 15px;
+    }
+
+    .page_heading_section {
+        padding: 120px 0 40px;
+    }
+
+    .video_section video {
+        height: 250px;
+    }
+
+    .about_services .single,
+    .services_section .single {
+        margin: 15px 0;
+    }
+
+    .become_section .content h4 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .become_section .content .join_btn {
+        font-size: 16px;
+        padding: 8px 35px;
+        margin-top: 15px;
+    }
+
+    .legal_listing .single img {
+        height: 170px;
+    }
+
+    .legal_listing .single .title {
+        font-size: 17px;
+    }
+
+    .legal_listing .more_btn {
+        font-size: 17px;
+        width: 155px;
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .pricing_content {
+        padding: 60px 0;
+    }
+    .pricing_content .heading_row .left_col,
+    .pricing_content .heading_row .right_col {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .pricing_content .heading_row .nav-tabs {
+        float: left;
+    }
+
+    .pricing_content .heading_row .left_col h3 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .pricing_content .heading_row .left_col p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .pricing_content .heading_row .right_col {
+        margin-top: 20px;
+    }
+
+    .pricing_content .single_plan .box {
+        margin: 15px 0;
+    }
+
+    .pricing_content .tab-content {
+        margin-top: 40px;
+    }
+
+    .contact_data_section{
+        padding:60px 0;
+    }
+
+    .contact_data_section .contact_box{
+        padding:20px;
+    }
+
+    .contact_data_section .contact_box h3{
+        margin: 0 auto 20px;
+        font-size:24px;
+        font-weight:700;
+        padding-bottom:5px;
+    }
+
+    .contact_data_section .form_col h5{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .contact_data_section .form_col .send_btn{
+        margin-top:10px;
+    }
+
+    .contact_data_section .contents{
+        padding-top:20px;
+    }
+
+    .contact_data_section .contents li:not(:last-child){
+        margin-bottom:10px;
+    }
+
+    .become_tutor_section .thumbnail{
+        margin-bottom: 20px;
+    }
+
+    .become_tutor_section .become_form .title{
+        font-size: 18px;
+    }
+
+    .become_tutor_section input.form-control, .become_tutor_section select.form-control{
+        height:40px;
+    }
+
+    .become_tutor_section .form-control::placeholder, .become_tutor_section .form-control{
+        font-size:14px;
+    }
+
+    .become_tutor_section .info .form-group{
+        margin-bottom: 15px;
+    }
+
+    .become_tutor_section .submit_btn{
+        max-width: 170px;
+        height: 45px;
+        font-size: 16px;
+        margin: 15px auto 0;
+    }
+
+    .about_info{
+        padding:40px 0;
+    }
+
+    .about_info .image_col,
+    .about_info .content_col{
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding:0 15px;
+    }
+
+    .about_info .content_col{
+        margin-top:20px;
+    }
+
+    .about_info .content_col .title{
+        font-size:20px;
+    }
+
+    .belief_section{
+        padding:60px 0;
+    }
+
+    .belief_section h3{
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .belief_section .btn{
+        font-size: 18px;
+        margin: 20px auto 30px;
+    }
+
+    .services_section{
+        padding: 0px 0 60px;
+    }
+
+    .coming_soon_section .content .title{
+        font-size: 42px;
+    }
+
+    .coming_soon_section .content p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .coming_soon_section .counter .item span{
+        font-size:50px;
+    }
+
+    .coming_soon_section .counter .item .title{
+        font-size:18px;
+        line-height: 24px;
+    }
+
+    .coming_soon_section .counter{
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        padding: 15px 0;
+    }
+    header .logo img {
+        width: 80px;
+    }
+    header.fixed {
+        padding: 10px 0;
+    }
+    .banner_section {
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+    .banner_section h1 {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+    .banner_section ul li {
+        font-size: 16px;
+        padding-left: 25px;
+    }
+    .banner_section ul li:before {
+        height: 16px;
+        width: 16px;
+    }
+    .banner_section ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .banner_section .download_btn {
+        margin-top: 30px;
+        font-size: 15px;
+        height: 40px;
+        width: 170px;
+    }
+    .banner_section .counter{margin: 20px 0 0px;}
+    .banner_section .counter.fixed{margin: 10px 0 0px;}
+    .banner_section .counter .item span{font-size:20px;}
+    .banner_section .counter .item span.title{font-size:10px;}
+    .banner_section .counter .item:not(:last-child){margin-right:10px;}
+    .banner_section .counter .item:not(:first-child):before,
+    .banner_section .counter .item:not(:first-child):after{left:-6px; height:4px; width:4px;}
+
+    .sidebar_menus {
+        max-width: 300px;
+        right: -300px;
+    }
+
+    .sidebar_menus li a {
+        font-size: 20px;
+    }
+    .sidebar_menus li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .created_section .left_content {
+        margin: 40px 0;
+    }
+
+    .created_section .section_title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .created_section li .icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .testimonial_section .user_detail .name {
+        font-size: 16px;
+    }
+
+    .testimonial_section .user_detail .type {
+        font-size: 12px;
+    }
+
+    .testimonial_section .content_col p {
+        font-size: 14px;
+        line-height: 24px;
+        text-indent: 30px;
+    }
+
+    .testimonial_section .content_col:before {
+        height: 20px;
+        width: 20px;
+        background-size: contain;
+    }
+
+    .testimonial_section .swiper-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .testimonial_section .swiper-pagination-bullet {
+        height: 7px;
+        width: 7px;
+    }
+
+    .created_section ul {
+        margin: 10px -10px 0;
+    }
+
+    .app_section .content .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .app_section .content p {
+        margin-bottom: 5px;
+    }
+
+    .app_section .content .download_btn {
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .steps_section {
+        padding: 40px 0 100px;
+    }
+
+    .steps_section .title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .steps_section .single {
+        margin: 15px 0;
+    }
+
+    .newsletter_section .box .title {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .newsletter_section .input_group .form-control {
+        height: 42px;
+        padding: 0 100px 0 15px;
+        font-size: 14px;
+    }
+
+    .newsletter_section .input_group .form-control::placeholder {
+        font-size: 14px;
+    }
+
+    .newsletter_section .input_group .submit_btn {
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .contact_section {
+        padding: 120px 0 40px;
+    }
+
+    .contact_section .title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .contact_section .contact_btn {
+        height: 40px;
+    }
+
+    footer .top_footer {
+        padding: 25px 0 15px;
+    }
+
+    footer .top_footer h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    footer .top_footer ul {
+        margin-top: 10px;
+    }
+
+    footer .top_footer li {
+        padding: 0 5px;
+    }
+
+    footer .top_footer li a {
+        font-size: 12px;
+    }
+
+    footer .bottom_footer {
+        padding: 10px 0;
+    }
+
+    footer .bottom_footer .left_col,
+    footer .bottom_footer .right_col {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    footer .bottom_footer .left_col p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    footer .bottom_footer .right_col ul {
+        justify-content: center;
+        margin-top: 10px;
+        float:unset;
+    }
+
+    .page_heading_section .title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .page_heading_section p {
+        font-size: 15px;
+    }
+
+    .counter .item span {
+        font-size: 24px;
+    }
+
+    .counter .item:not(:first-child):before,
+    .counter .item:not(:first-child):after {
+        top: 30%;
+        height: 5px;
+        width: 5px;
+    }
+
+    .page_heading_section {
+        padding: 90px 0 20px;
+    }
+
+    .counter.fixed {
+        margin-top: 10px;
+    }
+
+    .counter.fixed .item span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .video_section video {
+        height: 200px;
+    }
+
+    .video_section .play_icon {
+        width: 80px;
+        height: auto;
+    }
+
+    .services_section .single .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .services_section .single .title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .services_section .single p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .become_section .box {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .become_section .content {
+        padding: 50px 15px;
+    }
+
+    .legal_listing .more_btn {
+        font-size: 15px;
+        height: 40px;
+    }
+
+    .pricing_content {
+        padding: 40px 0;
+    }
+
+    .pricing_content .heading_row .left_col h3 {
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+
+    .pricing_content .heading_row .left_col p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .pricing_content .heading_row .nav-link {
+        width: 100px;
+        height: 40px;
+    }
+
+    .pricing_content .heading_row .nav-tabs .overlay {
+        width: 100px;
+        height: 40px;
+    }
+
+    .pricing_content .tab-content {
+        margin-top: 20px;
+    }
+
+    .pricing_content .single_plan .price strong {
+        font-size: 30px;
+    }
+
+    .pricing_content .single_plan .name {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 5px 0 15px;
+    }
+
+    .pricing_content .single_plan .box {
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .pricing_content .single_plan .box .plan_btn {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .contact_data_section{
+        padding:40px 0;
+    }
+
+    .contact_data_section .contact_box h3{
+        font-size:20px;
+    }
+
+    .contact_data_section .form_col h5{
+        font-size:16px;
+    }
+
+    .contact_data_section .form_col input.form-control{
+        height:40px;
+    }
+
+    .contact_data_section .form_col label{
+        font-size: 14px;
+        top:10px;
+    }
+
+    .contact_data_section .form_col .send_btn{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .contact_data_section .contents li{
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .contact_data_section .map{
+        height:110px;
+    }
+
+    .become_tutor_section{
+        padding:40px 0;
+    }
+
+    .become_tutor_section .thumbnail .preview{
+        height: 80px;
+        width: 80px;
+    }
+
+    .become_tutor_section .thumbnail{
+        margin-bottom:10px;
+    }
+
+    .become_tutor_section .become_form .title{
+        font-size:16px;
+        margin-bottom: 15px;
+    }
+
+    .become_tutor_section .thumbnail label:hover .icon{
+        width:30px;
+    }
+
+    .become_tutor_section .study label{
+        padding: 3px 10px; 
+        font-size: 12px;
+    }
+
+    .become_tutor_section .single{
+        margin: 0 5px 10px 0;
+    }
+
+    .become_tutor_section .submit_btn{
+        margin: 10px auto 0;
+        max-width: 150px; 
+        height: 40px; 
+        font-size: 14px;
+    }
+
+    .about_info .image_col img{
+        max-height: 180px;
+    }
+
+    .about_info .content_col .title{
+        font-size: 17px;
+    }
+
+    .about_info .content_col p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .belief_section{
+        padding:40px 0;
+    }
+
+    .belief_section h3{
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .belief_section .btn{
+        font-size: 16px;
+        margin: 20px auto 20px;
+        padding: 8px 35px;
+    }
+
+    .work_section{
+        padding:40px 0;
+    }
+
+    .work_section .content h5{
+        font-size:20px;
+    }
+
+    .work_section .content p{
+        font-size:14px;
+        line-height:22px;
+    }
+
+    .work_section .right_col figure{
+        height:200px;
+    }
+
+    .coming_soon_section .content .title{
+        font-size:32px;
+    }
+
+    .coming_soon_section .counter .item:not(:last-child){
+        margin-right:20px;
+    }
+
+    .coming_soon_section .counter .item span{
+        font-size:32px;
+    }
+
+    .coming_soon_section .counter .item:not(:first-child):before, .coming_soon_section .counter .item:not(:first-child):after{
+        height: 5px; width: 5px; left: -10px;
+    }
+
+    .coming_soon_section .counter .item .title{
+        font-size:14px;
+        line-height:20px;
+    }
+
+    .counter .item:not(:first-child):after{
+        top:50%;
+    }
+
+    .coming_soon_section .counter .item:not(:first-child):before{
+        top:32%;
+    }
+
+    header .right_menus li a{
+        height:26px;
+        width:26px;
+    }
+
+    header .right_menus li a img{
+        width:14px;
+        height:auto;
+    }
+
+    .banner_section {
+        height: auto;
+    }
+
+    
+
+}

@@ -1,0 +1,125 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Study Buddy - Home Page</title>
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <!--  start header -->
+
+        <header>
+            <div class="container">
+                <div class="row mx-0">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.svg" /></a>
+                    </div>
+
+                    <ul class="right_menus">
+                        <li>
+                            <a href="https://www.instagram.com/flycommunityllc/" target="_blank" title="Instagram">
+                                <img src="images/instagram_dark.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/FLY-Study-with-a-Buddy-109254674827955" target="_blank" title="Facebook">
+                                <img src="images/facebook_dark.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/fly-studywithabuddy" target="_blank" title="LinkedIn">
+                                <img src="images/linkedin_dark.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/zttXMy5f" target="_blank" title="Discord">
+                                <img src="images/discord_dark.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/FLYCommunityLLC" target="_blank" title="Twitter">
+                                <img src="images/twitter_dark.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCp4HHBqQHpF7UlaNV4bhSuQ" target="_blank" title="Youtube">
+                                <img src="images/youtube_dark.svg" />
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="javascript:void(0)" title="TikTok">
+                                <img src="images/tiktok_dark.svg" />
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- end of header -->
+
+        <div class="coming_soon_section">
+            <div class="container">
+                <div class="content">
+                    <h3 class="title">Coming soon</h3>
+                    <p>Stay tuned</p>
+                    <div class="counter">
+                        <div class="item">
+                            <span id="days">02</span
+                            ><span class="title">Days</span>
+                        </div>
+                        <div class="item">
+                            <span id="hours">06</span
+                            ><span class="title">Hours</span>
+                        </div>
+                        <div class="item">
+                            <span id="minutes">09</span
+                            ><span class="title">Minutes</span>
+                        </div>
+                        <div class="item">
+                            <span id="seconds">42</span
+                            ><span class="title">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/jquery@3.1.1/dist/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".testimonial_slider", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+    </body>
+</html>

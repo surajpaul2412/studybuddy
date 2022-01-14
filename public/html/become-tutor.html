@@ -1,0 +1,502 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Study Buddy - Home Page</title>
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <!--  start header -->
+
+        <header>
+            <div class="container">
+                <div class="row mx-0">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.svg" /></a>
+                    </div>
+
+                    <div class="hamburger_icon">
+                        <img src="images/hamburger.svg" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- end of header -->
+
+        <!-- start banner section -->
+
+        <section class="page_heading_section pricing_heading">
+            <div class="container">
+                <h1 class="title">Become a Tutor</h1>
+                <div class="counter">
+                    <div class="item">
+                        <span id="days"></span><span class="title">Days</span>
+                    </div>
+                    <div class="item">
+                        <span id="hours"></span><span class="title">Hours</span>
+                    </div>
+                    <div class="item">
+                        <span id="minutes"></span
+                        ><span class="title">Minutes</span>
+                    </div>
+                    <div class="item">
+                        <span id="seconds"></span
+                        ><span class="title">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start video section -->
+
+        <section class="video_section">
+            <video id="video"  poster="http://studybuddy.alcax.com/html/images/video_thumbnail.png">
+                <source src="videos/tutorVideo.mp4" type="video/mp4" />
+            </video>
+            <img
+                src="images/play.png"
+                alt="play"
+                title="Play"
+                class="play_icon"
+                data-toggle="modal" data-target="#video_modal"
+            />
+        </section>
+
+        <!-- end of video section -->
+
+        <!-- services section -->
+
+        <section class="services_section about_services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/market_price.svg" />
+                            </span>
+                            <h5 class="title">Open Market Pricing</h5>
+                            <p>
+                                Choose your own pricing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/statistic.svg" />
+                            </span>
+                            <h5 class="title">Statistics</h5>
+                            <p>
+                                Check out what days drive the most traffic for yourself.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/low_fee.svg" />
+                            </span>
+                            <h5 class="title">Low Fees</h5>
+                            <p>
+                                We only charge 10% service fee. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start become tutor section -->
+
+        <section class="become_tutor_section">
+            <div class="container">
+                <form class="become_form">
+                    <div class="thumbnail">
+                        <input type="file" id="file" hidden />
+                        <label for="file">
+                            <img class="preview" src="images/thumbnail.png" />
+                            <img src="images/camera.svg" class="icon" />
+                        </label>
+                    </div>
+
+                    <div class="info">
+                        <h5 class="title">Tutor info</h5>
+                        <div class="row mx_-10">
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    class="form-control"
+                                    placeholder="Tutor Name"
+                                />
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Email Address"
+                                />
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Phone"
+                                />
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Introduction"
+                                />
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Headline "
+                                />
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <select class="form-control">
+                                    <option disabled selected>
+                                        Education Area
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <select class="form-control">
+                                    <option disabled selected>
+                                        University
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Zoom Link "
+                                />
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <select class="form-control">
+                                    <option disabled selected>Country</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <select class="form-control" required>
+                                    <option disabled selected>City</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="study">
+                        <h5 class="title">Select fields of study</h5>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="science"
+                                id="science"
+                                hidden
+                            />
+                            <label for="science">Science</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="physics"
+                                id="physics"
+                                hidden
+                            />
+                            <label for="physics">Physics</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="chemistry"
+                                id="chemistry"
+                                hidden
+                            />
+                            <label for="chemistry">Chemistry</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="space_science"
+                                id="space_science"
+                                hidden
+                            />
+                            <label for="space_science">Space Science</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="microbiology"
+                                id="microbiology"
+                                hidden
+                            />
+                            <label for="microbiology">Microbiology</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="technologies"
+                                id="technologies"
+                                hidden
+                            />
+                            <label for="technologies">Technologies</label>
+                        </div>
+                        <div class="single">
+                            <input type="checkbox" name="art" id="art" hidden />
+                            <label for="art">Art</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="construction"
+                                id="construction"
+                                hidden
+                            />
+                            <label for="construction">Construction</label>
+                        </div>
+
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="energy"
+                                id="energy"
+                                hidden
+                            />
+                            <label for="energy">Energy</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="transportation"
+                                id="transportation"
+                                hidden
+                            />
+                            <label for="transportation">Transportation</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="manufacturing"
+                                id="manufacturing"
+                                hidden
+                            />
+                            <label for="manufacturing">Manufacturing</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="engineering"
+                                id="engineering"
+                                hidden
+                            />
+                            <label for="engineering">Engineering</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="communication"
+                                id="communication"
+                                hidden
+                            />
+                            <label for="communication">Communication</label>
+                        </div>
+                        <div class="single">
+                            <input
+                                type="checkbox"
+                                name="mathematics"
+                                id="mathematics"
+                                hidden
+                            />
+                            <label for="mathematics">Mathematics</label>
+                        </div>
+
+                        <div class="row mx_-10 mt_30 mt_sm_20">
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    placeholder="Password"
+                                />
+                            </div>
+
+                            <div class="col-md-6 form-group px_10">
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    placeholder="Confirm Password"
+                                />
+                            </div>
+                        </div>
+
+                        <input
+                            type="submit"
+                            class="dark_btn submit_btn"
+                            value="Create Account"
+                        />
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="container">
+                <div class="top_footer">
+                    <h5>Study Buddy LLC</h5>
+                    <ul>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="legal.html">Legal</a>
+                        </li>
+                        <li>
+                            <a href="become-tutor.html">Become a Tutor</a>
+                        </li>
+                        <li>
+                            <a href="become-student.html">Become a Student</a>
+                        </li>
+                        <li>
+                            <a href="university.html">University</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bottom_footer">
+                    <div class="left_col">
+                        <p>© 2021 Study Buddy LLC. All rights reserved</p>
+                    </div>
+
+                    <div class="right_col">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/flycommunityllc/" target="_blank" title="Instagram">
+                                    <img src="images/instagram.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/FLY-Study-with-a-Buddy-109254674827955" target="_blank" title="Facebook">
+                                    <img src="images/facebook.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/fly-studywithabuddy" target="_blank" title="LinkedIn">
+                                    <img src="images/linkedin.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/zttXMy5f" target="_blank" title="Discord">
+                                    <img src="images/discord.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/FLYCommunityLLC" target="_blank" title="Twitter">
+                                    <img src="images/twitter.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCp4HHBqQHpF7UlaNV4bhSuQ" target="_blank" title="Youtube">
+                                    <img src="images/youtube.svg" />
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="javascript:void(0)" title="TikTok">
+                                    <img src="images/tiktok.svg" />
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- MENUS -->
+
+        <div class="sidebar_menus">
+            <ul>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="legal.html">Legal</a></li>
+                <li><a href="become-tutor.html">Become a Tutor</a></li>
+                <li><a href="become-student.html">Become a Student</a></li>
+                <li><a href="university.html">University</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="comingsoon.html">Coming Soon</a></li>
+            </ul>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade-scale video_modal" id="video_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        <video class="modal_video" controls>
+                            <source src="videos/tutorVideo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/jquery@3.1.1/dist/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".testimonial_slider", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+@extends('layouts.backend.app')
+
+@section('content')
+<div class="container-xl">
+	<div class="page-header">
+	    <div class="row">
+	    	<div class="col-md-6 col-8" align="left">
+		    	<h2 class="page-title">Edit College</h2>
+	    	</div>
+	    	<div class="col-md-6 col-4" align="right">
+	    		<a class="btn btn-info text-white" href="{{route('admin.university.show', $id)}}">Back</a>
+	    	</div>
+	    </div>
+	</div>
+	<div class="card mt-3">
+    <div class="card-body">
+      <form method="post" action="{{route('admin.university.showUpdate', $id)}}" enctype="multipart/form-data">
+        @csrf
+        @method('PATCH')
+      	<div class="row">
+      		<div class="col-md-12 col-12">
+      			<div class="row">
+      				<div class="col-md-12 col-12">
+		      			<div class="form-group">
+				          <label class="form-label">Enter College Name : <sup class="text-danger">*</sup></label>
+				          <div>
+				            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Enter College Name" value="{{$college->name}}" required>
+				                @error('name')
+				                    <span class="invalid-feedback" role="alert">
+				                        <strong>{{ $message }}</strong>
+				                    </span>
+				                @enderror
+				          </div>
+				          <input type="hidden" name="data" value="{{$data}}" required>
+				        </div>
+		      		</div>
+      			</div>
+      		</div>
+      	</div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary">Update College</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+@endsection

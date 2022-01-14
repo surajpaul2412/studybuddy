@@ -1,0 +1,398 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Study Buddy - Home Page</title>
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <!--  start header -->
+
+        <header>
+            <div class="container">
+                <div class="row mx-0">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.svg" /></a>
+                    </div>
+
+                    <div class="hamburger_icon">
+                        <img src="images/hamburger.svg" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- end of header -->
+
+        <!-- start banner section -->
+
+        <section class="page_heading_section pricing_heading">
+            <div class="container">
+                <h1 class="title">Pricing</h1>
+                <div class="counter">
+                    <div class="item">
+                        <span id="days"></span><span class="title">Days</span>
+                    </div>
+                    <div class="item">
+                        <span id="hours"></span><span class="title">Hours</span>
+                    </div>
+                    <div class="item">
+                        <span id="minutes"></span
+                        ><span class="title">Minutes</span>
+                    </div>
+                    <div class="item">
+                        <span id="seconds"></span
+                        ><span class="title">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start pricing content -->
+
+        <section class="pricing_content">
+            <div class="container">
+                <div class="heading_row">
+                    <div class="left_col">
+                        <h3>What Plan Fits you best?</h3>
+                        <p>No contracts. No surprise fees.</p>
+                    </div>
+
+                    <div class="right_col">
+                        <ul
+                            class="nav nav-tabs custom_toggle_btns"
+                            id="myTab"
+                            role="tablist"
+                            position="0"
+                        >
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link button active"
+                                    id="home-tab"
+                                    data-toggle="tab"
+                                    href="#monthly"
+                                    role="tab"
+                                    aria-controls="home"
+                                    aria-selected="true"
+                                    >Monthly</a
+                                >
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link button"
+                                    id="profile-tab"
+                                    data-toggle="tab"
+                                    href="#yearly"
+                                    role="tab"
+                                    aria-controls="profile"
+                                    aria-selected="false"
+                                    >Yearly</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div
+                        class="tab-pane fade show active"
+                        id="monthly"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                    >
+                        <div class="row plans_row mx_-20">
+                            <div class="col-md-4 single_plan px_20">
+                                <div class="box">
+                                    <p class="price">
+                                        <strong>$20</strong> /month
+                                    </p>
+                                    <h5 class="name">Freelancer</h5>
+
+                                    <ul class="offers">
+                                        <li>All limited links</li>
+                                        <li>Own analytics platform</li>
+                                        <li>Chat support</li>
+                                        <li>Optimize hashtags</li>
+                                        <li>Unlimited users</li>
+                                    </ul>
+
+                                    <button class="button plan_btn">
+                                        Choose Plan
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 single_plan px_20">
+                                <div class="box active">
+                                    <p class="price">
+                                        <strong>$100</strong> /month
+                                    </p>
+                                    <h5 class="name">Professional</h5>
+
+                                    <ul class="offers">
+                                        <li>All limited links</li>
+                                        <li>Own analytics platform</li>
+                                        <li>Chat support</li>
+                                        <li>Optimize hashtags</li>
+                                        <li>Unlimited users</li>
+                                    </ul>
+
+                                    <button class="button plan_btn">
+                                        Choose Plan
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 single_plan px_20">
+                                <div class="box">
+                                    <p class="price">
+                                        <strong>$200</strong> /month
+                                    </p>
+                                    <h5 class="name">Business</h5>
+
+                                    <ul class="offers">
+                                        <li>All limited links</li>
+                                        <li>Own analytics platform</li>
+                                        <li>Chat support</li>
+                                        <li>Optimize hashtags</li>
+                                        <li>Unlimited users</li>
+                                    </ul>
+
+                                    <button class="button plan_btn">
+                                        Choose Plan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tab-pane fade"
+                        id="yearly"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                    >
+                        <div class="row plans_row mx_-20">
+                            <div class="col-md-4 single_plan px_20">
+                                <div class="box">
+                                    <p class="price">
+                                        <strong>$200</strong> /year
+                                    </p>
+                                    <h5 class="name">Freelancer</h5>
+
+                                    <ul class="offers">
+                                        <li>All limited links</li>
+                                        <li>Own analytics platform</li>
+                                        <li>Chat support</li>
+                                        <li>Optimize hashtags</li>
+                                        <li>Unlimited users</li>
+                                    </ul>
+
+                                    <button class="button plan_btn">
+                                        Choose Plan
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 single_plan px_20">
+                                <div class="box active">
+                                    <p class="price">
+                                        <strong>$1000</strong> /year
+                                    </p>
+                                    <h5 class="name">Professional</h5>
+
+                                    <ul class="offers">
+                                        <li>All limited links</li>
+                                        <li>Own analytics platform</li>
+                                        <li>Chat support</li>
+                                        <li>Optimize hashtags</li>
+                                        <li>Unlimited users</li>
+                                    </ul>
+
+                                    <button class="button plan_btn">
+                                        Choose Plan
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 single_plan px_20">
+                                <div class="box">
+                                    <p class="price">
+                                        <strong>$2000</strong> /year
+                                    </p>
+                                    <h5 class="name">Business</h5>
+
+                                    <ul class="offers">
+                                        <li>All limited links</li>
+                                        <li>Own analytics platform</li>
+                                        <li>Chat support</li>
+                                        <li>Optimize hashtags</li>
+                                        <li>Unlimited users</li>
+                                    </ul>
+
+                                    <button class="button plan_btn">
+                                        Choose Plan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="container">
+                <div class="top_footer">
+                    <h5>Study Buddy LLC</h5>
+                    <ul>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="legal.html">Legal</a>
+                        </li>
+                        <li>
+                            <a href="become-tutor.html">Become a Tutor</a>
+                        </li>
+                        <li>
+                            <a href="become-student.html">Become a Student</a>
+                        </li>
+                        <li>
+                            <a href="university.html">University</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bottom_footer">
+                    <div class="left_col">
+                        <p>© 2021 Study Buddy LLC. All rights reserved</p>
+                    </div>
+
+                    <div class="right_col">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/flycommunityllc/" target="_blank" title="Instagram">
+                                    <img src="images/instagram.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/FLY-Study-with-a-Buddy-109254674827955" target="_blank" title="Facebook">
+                                    <img src="images/facebook.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/fly-studywithabuddy" target="_blank" title="LinkedIn">
+                                    <img src="images/linkedin.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/zttXMy5f" target="_blank" title="Discord">
+                                    <img src="images/discord.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/FLYCommunityLLC" target="_blank" title="Twitter">
+                                    <img src="images/twitter.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCp4HHBqQHpF7UlaNV4bhSuQ" target="_blank" title="Youtube">
+                                    <img src="images/youtube.svg" />
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="javascript:void(0)" title="TikTok">
+                                    <img src="images/tiktok.svg" />
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- MENUS -->
+
+        <div class="sidebar_menus">
+            <ul>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="legal.html">Legal</a></li>
+                <li><a href="become-tutor.html">Become a Tutor</a></li>
+                <li><a href="become-student.html">Become a Student</a></li>
+                <li><a href="university.html">University</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="comingsoon.html">Coming Soon</a></li>
+            </ul>
+        </div>
+
+        <script src="https://unpkg.com/jquery@3.1.1/dist/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".testimonial_slider", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+
+        <script>
+            window.addEventListener("DOMContentLoaded", (event) => {
+                const video = document.getElementById("video");
+                const circlePlayButton = document.querySelector(
+                    ".video_section .play_icon"
+                );
+
+                function togglePlay() {
+                    if (video.paused || video.ended) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+
+                circlePlayButton.addEventListener("click", togglePlay);
+                video.addEventListener("playing", function () {
+                    video.setAttribute("controls", true);
+                    circlePlayButton.style.opacity = 0;
+                });
+                video.addEventListener("pause", function () {
+                    circlePlayButton.style.opacity = 1;
+                    video.removeAttribute("controls");
+                });
+            });
+        </script>
+    </body>
+</html>

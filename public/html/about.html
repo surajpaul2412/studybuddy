@@ -1,0 +1,365 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Study Buddy - Home Page</title>
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <!--  start header -->
+
+        <header>
+            <div class="container">
+                <div class="row mx-0">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.svg" /></a>
+                    </div>
+
+                    <div class="hamburger_icon">
+                        <img src="images/hamburger.svg" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- end of header -->
+
+        <!-- start banner section -->
+
+        <section class="page_heading_section about_heading">
+            <div class="container">
+                <h1 class="title">About Study Buddy LLC</h1>
+                <p>Transport your education into the digital age</p>
+                <div class="counter">
+                    <div class="item">
+                        <span id="days"></span><span class="title">Days</span>
+                    </div>
+                    <div class="item">
+                        <span id="hours"></span><span class="title">Hours</span>
+                    </div>
+                    <div class="item">
+                        <span id="minutes"></span
+                        ><span class="title">Minutes</span>
+                    </div>
+                    <div class="item">
+                        <span id="seconds"></span
+                        ><span class="title">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start video section -->
+
+        <section class="video_section">
+            <video class="video" id="video" poster="http://studybuddy.alcax.com/html/images/video_thumbnail.png">
+                <source src="videos/aboutVideo.mp4" type="video/mp4" />
+            </video>
+            <img
+                src="images/play.png"
+                alt="play"
+                title="Play"
+                class="play_icon"
+                data-toggle="modal" data-target="#video_modal"
+            />
+        </section>
+
+        <!-- end of video section -->
+
+        <!-- services section -->
+
+        <section class="services_section about_services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/community_icon.svg" />
+                            </span>
+                            <h5 class="title">Community</h5>
+                            <p>
+                                Fallow your classmates and create the best study
+                                group
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/access_icon.svg" />
+                            </span>
+                            <h5 class="title">Access</h5>
+                            <p>
+                                With a variety of tutors and open market
+                                pricing, order a tutor that best suites your
+                                needs
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/build_icon.svg" />
+                            </span>
+                            <h5 class="title">User Friendly</h5>
+                            <p>
+                                Get the help you deserve at a click of a button
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/availibility.svg" />
+                            </span>
+                            <h5 class="title">Opportunity</h5>
+                            <p>
+                                With a service charge of only 10%, Fly is the
+                                perfect side job or professional business
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/flexibility_icon.svg" />
+                            </span>
+                            <h5 class="title">Flexibility</h5>
+                            <p>
+                                Choose the avliablity and pay that best
+                                complements your expertise
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single">
+                            <span class="icon">
+                                <img src="images/organization_icon.svg" />
+                            </span>
+                            <h5 class="title">Organization</h5>
+                            <p>
+                                Upload files in the digital backpack, analyze
+                                earnings, and track tutoring session
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- become section -->
+
+        <section class="become_section">
+            <div class="left_col box">
+                <div class="content">
+                    <h4>Become a Tutor</h4>
+                    <p>Start your business at a click of a button</p>
+                    <button class="join_btn">Join Now</button>
+                </div>
+            </div>
+
+            <div class="right_col box">
+                <div class="content">
+                    <h4>Become a Student</h4>
+                    <p>Start your business at a click of a button</p>
+                    <button class="join_btn">Join Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="container">
+                <div class="top_footer">
+                    <h5>Study Buddy LLC</h5>
+                    <ul>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="legal.html">Legal</a>
+                        </li>
+                        <li>
+                            <a href="become-tutor.html">Become a Tutor</a>
+                        </li>
+                        <li>
+                            <a href="become-student.html">Become a Student</a>
+                        </li>
+                        <li>
+                            <a href="university.html">University</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bottom_footer">
+                    <div class="left_col">
+                        <p>© 2021 Study Buddy LLC. All rights reserved</p>
+                    </div>
+
+                    <div class="right_col">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/flycommunityllc/" target="_blank" title="Instagram">
+                                    <img src="images/instagram.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/FLY-Study-with-a-Buddy-109254674827955" target="_blank" title="Facebook">
+                                    <img src="images/facebook.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/fly-studywithabuddy" target="_blank" title="LinkedIn">
+                                    <img src="images/linkedin.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/zttXMy5f" target="_blank" title="Discord">
+                                    <img src="images/discord.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/FLYCommunityLLC" target="_blank" title="Twitter">
+                                    <img src="images/twitter.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCp4HHBqQHpF7UlaNV4bhSuQ" target="_blank" title="Youtube">
+                                    <img src="images/youtube.svg" />
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="javascript:void(0)" title="TikTok">
+                                    <img src="images/tiktok.svg" />
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- MENUS -->
+
+        <div class="sidebar_menus">
+            <ul>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="legal.html">Legal</a></li>
+                <li><a href="become-tutor.html">Become a Tutor</a></li>
+                <li><a href="become-student.html">Become a Student</a></li>
+                <li><a href="university.html">University</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="comingsoon.html">Coming Soon</a></li>
+            </ul>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade-scale video_modal" id="video_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        <video class="modal_video" controls>
+                            <source src="videos/aboutVideo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/jquery@3.1.1/dist/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".testimonial_slider", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+
+        <script>
+            // window.addEventListener("DOMContentLoaded", (event) => {
+            //     const video = document.getElementById("video");
+                
+            //     const bodyEl = document.getElementsByTagName("body")[0];
+            //     const circlePlayButton = document.querySelector(
+            //         ".video_section .play_icon"
+            //     );
+
+            //     function togglePlay() {
+            //         if (video.paused || video.ended) {
+            //             video.play();
+            //         } else {
+            //             video.pause();
+            //         }
+            //     }
+
+            //     circlePlayButton.addEventListener('click',function(){
+            //         modal_video.play();
+            //     })
+
+            //     // circlePlayButton.addEventListener("click", togglePlay);
+            //     // video.addEventListener("playing", function () {
+            //     //     bodyEl.classList.add('modal-open');
+            //     //     video.classList.add('expand');
+            //     //     video.setAttribute("controls", true);
+            //     //     circlePlayButton.style.opacity = 0;
+            //     // });
+            //     // video.addEventListener("pause", function () {
+            //     //     bodyEl.classList.remove('modal-open');
+            //     //     video.classList.remove('expand')
+            //     //     circlePlayButton.style.opacity = 1;
+            //     //     // video.removeAttribute("controls");
+            //     // });
+
+            //     // if(video.play()){
+            //     //     video.addEventListener("seeking", function () {
+            //     //         bodyEl.classList.add('modal-open');
+            //     //         video.classList.add('expand');
+            //     //         video.setAttribute("controls", true);
+            //     //         circlePlayButton.style.opacity = 0;
+            //     //     });
+            //     // }
+            // });
+        </script>
+    </body>
+</html>

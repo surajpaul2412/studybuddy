@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Chat extends Model
+{
+    protected $fillable = [
+        'sender_id','receiver_id','message','message_type','read','deleted_at'
+    ];
+
+    protected $perPage =  100;
+
+    public function sender()
+    {
+        return $this->belongsTo(User::class, 'sender_id');
+    }
+
+    public function receiver()
+    {
+        return $this->belongsTo(User::class, 'receiver_id');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user', 'id');
+    }
+
+
+
+
+}
