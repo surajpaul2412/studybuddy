@@ -18,25 +18,25 @@ use App\Models\Legal;
 *FRONTEND*
 */ 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/verifyUser/{id}', 'AuthController@verifyUser')->name('verifyUser');
+// Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/verifyUser/{id}', 'AuthController@verifyUser')->name('verifyUser');
 
-Route::get('/', function () { return view('welcome');})->name('/');
-Route::get('/about', function () { return view('frontend.about');})->name('about');
-Route::get('/contact', function () { return view('frontend.contact');})->name('contact');
-Route::get('/become-student', function () { return view('frontend.become-student');})->name('become-student');
-Route::get('/become-tutor', function () { return view('frontend.become-tutor');})->name('become-tutor');
-Route::get('/legal', function () { return view('frontend.legal');})->name('legal');
-Route::get('/legal-detail/{legal}', function (Legal $legal) { 
-    return view('frontend.legal-detail',compact('legal'));
-})->name('legal-detail');
-Route::get('/pricing', function () { return view('frontend.pricing');})->name('pricing');
-Route::get('/university', function () { return view('frontend.university');})->name('university');
-// Interactions
-Route::post('contact-form','FrontendController@contact')->name('contact-form');
-Route::post('student-register','FrontendController@studentRegister')->name('student-register');
-Route::post('tutor-register','FrontendController@tutorRegister')->name('tutor-register');
-Route::post('newsletter','FrontendController@newsletter')->name('newsletter');
+// Route::get('/', function () { return view('welcome');})->name('/');
+// Route::get('/about', function () { return view('frontend.about');})->name('about');
+// Route::get('/contact', function () { return view('frontend.contact');})->name('contact');
+// Route::get('/become-student', function () { return view('frontend.become-student');})->name('become-student');
+// Route::get('/become-tutor', function () { return view('frontend.become-tutor');})->name('become-tutor');
+// Route::get('/legal', function () { return view('frontend.legal');})->name('legal');
+// Route::get('/legal-detail/{legal}', function (Legal $legal) { 
+//     return view('frontend.legal-detail',compact('legal'));
+// })->name('legal-detail');
+// Route::get('/pricing', function () { return view('frontend.pricing');})->name('pricing');
+// Route::get('/university', function () { return view('frontend.university');})->name('university');
+// // Interactions
+// Route::post('contact-form','FrontendController@contact')->name('contact-form');
+// Route::post('student-register','FrontendController@studentRegister')->name('student-register');
+// Route::post('tutor-register','FrontendController@tutorRegister')->name('tutor-register');
+// Route::post('newsletter','FrontendController@newsletter')->name('newsletter');
 
 /*
 **BACKEND**
@@ -102,3 +102,33 @@ Route::group(['as'=>'university.','prefix'=>'university','namespace'=>'Universit
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/save-token', [App\Http\Controllers\HomeController::class, 'saveToken'])->name('save-token');
 Route::post('/send-notification', [App\Http\Controllers\HomeController::class, 'sendNotification'])->name('send.notification');
+
+
+// collar
+Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('privacy-policy', function () {
+    return view('privacy-policy');
+});
+
+Route::get('seller-faqs', function () {
+    return view('seller-faqs');
+});
+
+Route::get('buyer-faqs', function () {
+    return view('buyer-faqs');
+});
+
+Route::get('terms-and-conditions', function () {
+    return view('terms-and-conditions');
+});
+
+Route::get('blog-single', function () {
+    return view('blog-single');
+});
+
+Route::get('/register', [registerController::class, 'register'])->name('register');
+Route::get('/blog', [blogController::class, 'blog'])->name('blog');
+Route::get('/blog/{id}', [blogController::class, 'blog_detail']);

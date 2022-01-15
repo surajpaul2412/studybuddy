@@ -16,15 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 // Route::middleware('auth:api')->group
 
-Route::post('register', 'AuthController@register');
-Route::post('login', 'AuthController@login');
-Route::post('forgetPassword', 'AuthController@forgetPassword');
+// Route::post('register', 'AuthController@register');
+// Route::post('login', 'AuthController@login');
+// Route::post('forgetPassword', 'AuthController@forgetPassword');
 
-// webhook resp
-Route::post('/withdraw/success', 'AuthController@success');//delete
-
-// Stripe Connect Webhook
-Route::get('stripe/connect', 'API\StripeController@connect');//delete
 
 Route::middleware('auth:api')->group(function() {
 	// User Related Detail
@@ -196,3 +191,60 @@ Route::prefix('stripe/connect')->group(function(){
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+
+
+// collar
+Route::group(['middleware' => 'auth:api'], function(){
+    Route::post('/brand/store', 'API\brandController@store');
+    Route::post('/brand/edit/{id}', 'API\brandController@edit');
+});
+Route::get('/test-suraj', 'API\brandController@test')->middleware('auth');
+
+
+
+
+Route::get('/brand', 'API\brandController@index');
+Route::get('/user/{id}', 'API\UserController@user');
+Route::post('/register', 'API\UserController@register');
+Route::post('/login', 'API\UserController@login')->name('login');
+Route::get('/allusers', 'API\UserController@allUsers');
+Route::get('/roles', 'API\UserController@roles');
+//Route::get('/', 'API\UserController@allUsers');
+Route::post('/submitOtp/{mobile}', 'API\UserController@submitOtp');
+Route::post('/forget', 'API\UserController@forget');
+Route::post('/logout', 'Api\UserController@logout');
+
+/////////Route designer type and project//////////////
+Route::post('/add-designer-type', 'API\ProjectController@addDesignerType');
+Route::get('/all-designer-type', 'API\ProjectController@allDesignerType');
+Route::get('/designer-type/{id}', 'API\ProjectController@designerType');
+Route::put('/update-designer-type/{id}', 'API\ProjectController@updateDesignerType');
+Route::delete('/delete-designer-type/{id}', 'API\ProjectController@deleteDesignerType');
+////////////////Route for category//////////////////////
+Route::post('/add-category', 'API\ProjectController@addCategory');
+Route::get('/all-category', 'API\ProjectController@allCategory');
+Route::get('/category/{id}', 'API\ProjectController@category');
+Route::put('/update-category/{id}', 'API\ProjectController@updateCategory');
+Route::delete('/delete-category/{id}', 'API\ProjectController@deleteCategory');
+////////////////Route for session //////////////////////
+Route::post('/add-sesion', 'API\ProjectController@addSesion');
+Route::get('/all-seasons', 'API\ProjectController@allSeasons');
+////////////////Route for post project//////////////////////
+Route::post('/post-new-project', 'API\ProjectController@postProject');
+Route::get('/all-posted-project', 'API\ProjectController@allPostedProject');
+Route::get('/project/{id}', 'API\ProjectController@project');
+Route::post('/update-project/{id}', 'API\ProjectController@updateProject');
+Route::delete('/delete-project/{id}', 'API\ProjectController@deleteProject');
+///////////Route for Comments/////////////////////////////
+Route::post('/save-comments/{$id}', 'API\ProjectController@postComments');
+
+///////////Route for styles/////////////////////////////
+Route::get('/all-styleusers', 'API\ProjectController@allStyleusers');
+
+Route::get('/all-deliveryslots', 'API\ProjectController@allDeliveryslots');
+
+///////////Route for payments/////////////////////////////
+Route::post('/submit-payment', 'API\PaymentController@addPayment');
+Route::get('/user-transactions/{id}', 'API\PaymentController@userTransactions');
+Route::get('/transaction-details/{id}', 'API\PaymentController@transactionsDetails');
+Route::get('/project-transaction/{id}', 'API\PaymentController@projectTransactions');
