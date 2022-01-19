@@ -16,12 +16,51 @@ use Illuminate\Support\Facades\Route;
 
 // Route::middleware('auth:api')->group
 
-// Route::post('register', 'AuthController@register');
-// Route::post('login', 'AuthController@login');
+Route::post('register', 'AuthController@register');
+Route::post('login', 'AuthController@login');
 // Route::post('forgetPassword', 'AuthController@forgetPassword');
 
 
 Route::middleware('auth:api')->group(function() {
+	Route::group(['prefix'=>'designer'], function(){
+		Route::get('/list','AuthController@designer_list');
+		Route::get('/{id}','AuthController@designer');
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// User Related Detail
 	Route::post('studentDetail', 'AuthController@studentDetail');
 	Route::post('tutorDetail', 'AuthController@tutorDetail');
@@ -203,10 +242,19 @@ Route::get('/test-suraj', 'API\brandController@test')->middleware('auth');
 
 
 
+
+
+
+
+
+
+
+
+// scrap code
 Route::get('/brand', 'API\brandController@index');
 Route::get('/user/{id}', 'API\UserController@user');
-Route::post('/register', 'API\UserController@register');
-Route::post('/login', 'API\UserController@login')->name('login');
+// Route::post('/register', 'API\UserController@register');
+// Route::post('/login', 'API\UserController@login')->name('login');
 Route::get('/allusers', 'API\UserController@allUsers');
 Route::get('/roles', 'API\UserController@roles');
 //Route::get('/', 'API\UserController@allUsers');

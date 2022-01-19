@@ -24,26 +24,20 @@ class RolesTableSeeder extends Seeder
 	        	'updated_at' => carbon::now()
 	        ]);
 	        DB::table('roles')->insert([
-	        	'name' => 'University',
-	        	'slug' => 'university',
+	        	'name' => 'Fashion Designer',
+	        	'slug' => 'fashion_designer',
 	        	'created_at' => carbon::now(),
 	        	'updated_at' => carbon::now()
 	        ]);
 	        DB::table('roles')->insert([
-	        	'name' => 'Tutor',
-	        	'slug' => 'tutor',
+	        	'name' => 'WholeSaler',
+	        	'slug' => 'wholeSaler',
 	        	'created_at' => carbon::now(),
 	        	'updated_at' => carbon::now()
 	        ]);
 	        DB::table('roles')->insert([
-	        	'name' => 'Student',
-	        	'slug' => 'student',
-	        	'created_at' => carbon::now(),
-	        	'updated_at' => carbon::now()
-	        ]);
-	        DB::table('roles')->insert([
-	        	'name' => 'Parent',
-	        	'slug' => 'parent',
+	        	'name' => 'Factory Owner',
+	        	'slug' => 'factory_owner',
 	        	'created_at' => carbon::now(),
 	        	'updated_at' => carbon::now()
 	        ]);

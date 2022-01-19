@@ -18,10 +18,10 @@ class User extends Authenticatable implements FcmServiceI
      * @var array
      */
     protected $fillable = [
-        'role_id', 'first_name', 'last_name', 'email', 'mobile', 'country', 'city', 'password','avg_rating', 'status', 'avatar','date_of_birth','deleted_at','stripe_cust_id','stripe_acc_id','device_token','device_type'
+        'role_id', 'name', 'username', 'email', 'mobile', 'country', 'city', 'password','avg_rating', 'status', 'avatar','date_of_birth','deleted_at','stripe_cust_id','stripe_acc_id','device_token','device_type'
     ];
 
-    protected $appends = ['full_name','wallet_balance','reviews'];
+    protected $appends = ['reviews'];
 
     public function getFullNameAttribute() {
         $res = '';

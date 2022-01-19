@@ -30,13 +30,14 @@ class AuthController extends Controller
     public function register(Request $req)
     {
         $validator = Validator::make($req->all(),[
-            'role_id'=>'required|integer',
+            'name'=>"required|string|min:3|max:255",
+            'username'=>"required|string|min:3|max:255|unique:users",
             'email'=>"required|email|max:255|unique:users",
             'mobile' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10|unique:users',
-            'country'=>'required|string|min:2|max:255',
-            'city'=>'required|string|min:2|max:255',
+            'country'=>'nullable|string|min:2|max:255',
+            'city'=>'nullable|string|min:2|max:255',
             'avatar'=> 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'password' => 'required|min:6|string|confirmed',
+            // 'password' => 'required|min:6|string|confirmed',
             'date_of_birth' => 'date|before:now',
             'type'=>'integer|nullable|required_if:role_id,==,3'
         ]);       
@@ -49,17 +50,9 @@ class AuthController extends Controller
             return response()->json($response, 403);
         }
 
-        if($req->type == 2){
-            $domain_check = $this->domainCheck($email = $req->only('email'));
-            if(!$domain_check){
-                return response()->json(['status' => 'failure', 'message' => 'Sorry! Your university does not exist in our records. Please try again later'], 403);
-            }
-        }
-
         $input = $req->all();
         $input['password'] = bcrypt($req->password);
         $input['status'] = 0;
-
         $user = User::create($input);
 
         if(isset($req->type)){
@@ -72,7 +65,7 @@ class AuthController extends Controller
             $user = Auth::user();
             $token = $user->createToken($user->email.'-'.now());
 
-            Mail::to($req->email)->send(new NotifyMail($user));
+            // Mail::to($req->email)->send(new NotifyMail($user));
             
             $result = [
                 'token'=> $token->accessToken,
@@ -85,16 +78,6 @@ class AuthController extends Controller
             ];
             return response()->json($response, 200);
         }
-    }
-
-    public function domainCheck($email){
-        $univ_domains = User::whereRoleId(2)->pluck('email_domain')->toArray();
-        $userEmail = explode('@', $email['email']);
-
-        if( in_array($userEmail[1], $univ_domains)){
-            return true;
-        }
-        return false;
     }
 
     public function verifyUser($id){
@@ -358,8 +341,6 @@ class AuthController extends Controller
         }
     }
 
-
-    // login --> done
     public function login(Request $req)
     {
         $validator = Validator::make($req->all(),[
@@ -382,9 +363,6 @@ class AuthController extends Controller
             if($user->status == 1){
                 if($user->deleted_at == null){
                     $token = $user->createToken($user->email.'-'.now());
-                    if(isset($user->first_name)){ $userName = true; }else{ $userName = false; }
-                    if($user->subjects->count() > 0){ $userSubject = true; }else{ $userSubject = false; }
-                    if(isset($user->notification)){ $userNotification = true; }else{ $userNotification = false; }
                     if(isset($req->device_token)){ 
                         User::whereId($user->id)->update(['device_token'=>$req->device_token]);
                     }
@@ -394,9 +372,7 @@ class AuthController extends Controller
 
                     $result = [
                         'token'=> $token->accessToken,
-                        'name' => $userName,
-                        'subject' => $userSubject,
-                        'notification' => $userNotification,
+                        'name' => $user,
                         'role'=> $user->role
                     ];
 
@@ -475,5 +451,42 @@ class AuthController extends Controller
         // modify
         Withdraw::whereId(1)->update(['status'=>2]);
         return response()->json($req, 200);
+    }
+
+    public function designer_list(){
+        Auth::user();
+        $users = User::whereRoleId(3)->whereStatus(1)->get();
+        $response = [
+            'success' => true,
+            'data' => $users,
+            'message' => 'Success.'
+        ];
+        return response()->json($response, 200);
+    }
+
+    public function designer($id){
+        Auth::user();
+        $user = User::whereId($id)->first();
+        if($user){
+            if($user->role_id != 2){
+                $response = [
+                    'success' => false,
+                    'message' => 'Designer Unavailable.'
+                ];
+                return response()->json($response, 403);
+            }
+            $response = [
+                'success' => true,
+                'data' => $user,
+                'message' => 'Success.'
+            ];
+            return response()->json($response, 200);
+        }else{
+            $response = [
+                'success' => false,
+                'message' => 'User Unavailable.'
+            ];
+            return response()->json($response, 403);
+        }
     }
 }
